@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text Summarisation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="tool-panel">
+            <div class="panel-header">
+                <p class="eyebrow">NLP Mini Project</p>
+                <h1>Text Summarisation</h1>
+            </div>
+
+            <form method="post" class="summary-form">
+                <label for="text">Paste text</label>
+                <textarea id="text" name="text" rows="12" placeholder="Paste a paragraph or article here...">{{ original_text }}</textarea>
+
+                {% if error %}
+                    <p class="error">{{ error }}</p>
+                {% endif %}
+
+                <button type="submit">Summarize</button>
+            </form>
+
+            {% if summary %}
+                <section class="summary-output" aria-label="Summary">
+                    <div class="summary-heading">
+                        <h2>Summary</h2>
+                        {% if accuracy is not none %}
+                            <span class="accuracy-badge">Accuracy: {{ accuracy }}%</span>
+                        {% endif %}
+                    </div>
+                    <p>{{ summary }}</p>
+                </section>
+            {% endif %}
+        </section>
+    </main>
+</body>
+</html>
