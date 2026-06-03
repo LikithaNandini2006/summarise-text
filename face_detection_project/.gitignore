@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+
+captured_faces/
+dataset/
+
+models/*.h5
+models/*.keras
+models/*.json
