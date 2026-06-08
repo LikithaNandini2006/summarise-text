@@ -157,7 +157,8 @@ The summarized text is displayed in the output section.
 
 ### Summary Output
 
-![Summary Output](<img width="1366" height="768" alt="Screenshot (14)" src="https://github.com/user-attachments/assets/ccdbedc6-0c2e-4bdc-8cfb-d7bf2cd09176" />
+![Summary Output](<img width="1366" height="768" alt="Screenshot (14)" src="https://github.com/user-attachments/assets/db3a1aba-1efd-4e6f-a7fd-4d3b34314662" />
+
 )
 
 ---
